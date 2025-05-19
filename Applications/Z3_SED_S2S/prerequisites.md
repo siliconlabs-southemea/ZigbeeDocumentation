@@ -20,8 +20,8 @@ Some important points
 
 * S2S devices are not certifiable as Zigbee devices
 * A S2S receiver cannot be woken-up by a standart Zigbee packet 
-* A S2S command using wake-up frame can be received by a standart Zigbee router
 * S2S network can use same parameters as a nearby Zigbee network (ext-pan-id, panid, network key, channel)
+* A S2S command using wake-up frame can be received by a standart Zigbee router when same network parameters are used
 * When a S2S receiver receives a S2S command, it reboroadcasts this command using standart Zigbee format (No wake-up frame)
 * No meshing is done on S2S network.
 

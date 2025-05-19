@@ -16,36 +16,31 @@ In application the S2S profile will be on network interface 0 and the ZSED profi
 
 The following components needs to be added to the example:
 
-* Multi network
-* Network Steering
+* **Multi network**
+* **Network Steering**
 
 The following components need to be modified:
 
-* End Device Support
-
-Set the ZSED parameters to what is required by your application
-
-* Zigbee Device Config
-
-Add a secondary network as shown below:
+* **End Device Support**  -> Set the ZSED parameters to what is required by your application)
+* **Zigbee Device Config**  -> Add a secondary network as shown below:
 
 <img src="./images/end-device-config.PNG" alt="startup" width="600" class="center">
 
 Multi-network feature is not compatible with ZLL functionality. You need to remove all the ZLL relative components:
 
-* ZLL Commissioning Common
-* ZLL Commissioning Server
-* ZLL Identify Server
-* ZLL Utility Server Cluster
-* Zigbee light link
-* Zigbee Light Link (Library)
+* **ZLL Commissioning Common**
+* **ZLL Commissioning Server**
+* **ZLL Identify Server**
+* **ZLL Utility Server Cluster**
+* **Zigbee light link**
+* **Zigbee Light Link (Library)**
 
 **On BRD4194A, you will need to remove the "Simple Led" component and its instance otherwise application will crash.**
 
 To evaluate low power feature, you need to:
 
-* Remove the "Zigbee LCD Display"
-* Select "EUSART1" instead of "EUSART0" for the "vcom " component
+* Remove the **"Zigbee LCD Display"**
+* Select **"EUSART1"** instead of **"EUSART0"** for the "vcom " component
 
 With **ZAP tool**, an endpoint needs to be created for the secondary network with all the clusters needed by your application:
 
