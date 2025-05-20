@@ -40,7 +40,7 @@ Multi-network feature is not compatible with ZLL functionality. You need to remo
 To evaluate low power feature, you need to:
 
 * Remove the **"Zigbee LCD Display"**
-* Select **"EUSART1"** instead of **"EUSART0"** for the "vcom " component
+* Select **"USART0"** instead of **"EUSART0"** for the "vcom " component
 
 With **ZAP tool**, an endpoint needs to be created for the secondary network with all the clusters needed by your application:
 
