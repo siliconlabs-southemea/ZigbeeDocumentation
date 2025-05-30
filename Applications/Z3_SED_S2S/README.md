@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# - Creating a Sleepy 2 Sleepy application that is Zigbee compliant
+# Creating a Sleepy 2 Sleepy application that is Zigbee compliant
 
 ## Summary ##
 {% include list.liquid all=true %}
