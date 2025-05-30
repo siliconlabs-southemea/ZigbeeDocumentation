@@ -46,13 +46,6 @@ With **ZAP tool**, an endpoint needs to be created for the secondary network wit
 
 <img src="./images/zap.PNG" alt="startup" width="600" class="center">
 
-
-For now, the "ota client cluster" in both endpoint and all the OTA relative components should be removed from the project to have the application work as expected:
-
-* OTA Bootload Cluster Client
-* OTA Bootload Cluster Common Code
-* OTA Bootload Cluster Storage Common Code
-
 ## Modify the application code
 
 In app.c add the following code:

@@ -24,6 +24,7 @@ Some important points
 * A S2S command using wake-up frame can be received by a standart Zigbee router when same network parameters are used
 * When a S2S receiver receives a S2S command, it reboroadcasts this command using standart Zigbee format (No wake-up frame)
 * No meshing is done on S2S network.
+* Any ZCL packet sent by a S2S initiator will use a wake-up frame (group, on-off, etc)
 
 Sometimes a S2S receiver needs to receive commands not only from a S2S transmitter but also from an nearby Zigbee network. Multi-network feature of our Zigbee stack is a way to achieve this requirement. In this tutorial, we are going to cover this need. 
 
